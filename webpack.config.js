@@ -1,8 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyFilePlugin = require('copy-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
-const publicPath = `${__dirname}/shopify/`;
-const assetsPath = `${__dirname}/shopify/assets`;
+const assetsPath = `${__dirname}/assets`;
 
 // Set production or development via NODE_ENV
 const MODE = process.env.NODE_ENV;
@@ -78,22 +76,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
-    new CopyFilePlugin(
-     {
-      patterns: [
-        {
-          context: 'src',
-          from: '**/*',
-          to: publicPath,
-          globOptions: {
-            dot: true,
-            gitignore: true,
-            ignore: ['**/*.ts', '**/*.tsx', '**/*.scss'],
-          }
-        },
-      ]
-     }
-    ),
     new WriteFilePlugin(),
   ],
   target: ['web', 'es5'],

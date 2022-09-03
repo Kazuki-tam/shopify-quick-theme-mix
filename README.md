@@ -1,7 +1,8 @@
-# shopify-quick-theme
+# shopify-quick-theme-mix
 
-shopify-quick-theme is a starter kit for Shopify theme developers. This starter kit supports you to customize a Shopify theme and build a new one from scratch.
+shopify-quick-theme-mix is a template extended from [shopify-quick-theme](https://github.com/Kazuki-tam/shopify-quick-theme-mix). This starter kit supports Shopify GitHub integration.
 
+[📖 Shopify GitHub integration](https://shopify.dev/themes/tools/github)
 ## Status
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/tag/v0.0.1)
