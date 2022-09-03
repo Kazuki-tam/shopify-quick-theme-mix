@@ -1,6 +1,6 @@
 # shopify-quick-theme-mix
 
-shopify-quick-theme-mix is a template extended from [shopify-quick-theme](https://github.com/Kazuki-tam/shopify-quick-theme-mix).
+shopify-quick-theme-mix is a template extended from [shopify-quick-theme](https://github.com/Kazuki-tam/shopify-quick-theme).
 
 This starter kit supports Shopify GitHub integration.
 
