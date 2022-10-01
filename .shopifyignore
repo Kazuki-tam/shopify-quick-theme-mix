@@ -2,6 +2,8 @@
 .github
 .gitignore
 .editorconfig
+.setting/
+.yarn/
 shopify/
 e2e/
 **/coverage/
@@ -13,6 +15,7 @@ e2e/
 .prettierIgnore
 .prettierrc
 .stylelintrc.json
+.yarnrc.yml
 tsconfig.json
 package.json
 yarn.lock
