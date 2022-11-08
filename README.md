@@ -26,7 +26,7 @@ This starter kit supports Shopify GitHub integration.
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v2.20.0+](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v3.22.1+](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -50,14 +50,6 @@ Clone this repository and install dependencies.
 
 ```bash
 yarn install
-```
-
-### Authenticate
-
-Connect Shopify CLI with the store that you want to work on.
-
-```bash
-shopify login --store xxxxxxxxx.myshopify.com
 ```
 
 ### Create a new theme
@@ -240,34 +232,6 @@ Packages your local theme files into a ZIP file that can be uploaded to Shopify.
 
 ```bash
 yarn package
-```
-
-### Products command
-Creates products in your store. Products are created with a title and a price.
-
-```bash
-yarn products
-```
-
-### Customers command
-Creates customers in your store. Customers are created with a name only.
-
-```bash
-yarn customers
-```
-
-### Draft orders command
-Creates draft orders in your store. Draft orders are created with one custom item.
-
-```bash
-yarn draftorders
-```
-
-### Store command
-Displays the store that you're currently connected to.
-
-```bash
-yarn store
 ```
 
 ### PostInstall command
