@@ -9,7 +9,7 @@ This starter kit supports Shopify GitHub integration.
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2022)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme-mix)
 
 ## Features
@@ -25,8 +25,8 @@ This starter kit supports Shopify GitHub integration.
 
 ## Requirements
 
-- [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v3.22.1+](https://shopify.dev/themes/tools/cli)
+- [Node v16 or higher](https://nodejs.org/en/)
+- [Shopify CLI v3.22.1 or higher](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -50,6 +50,12 @@ Clone this repository and install dependencies.
 
 ```bash
 yarn install
+```
+
+Create a .env file at the root directory, and then add your SHOPIFY_FLAG_STORE value at least. Replace the placeholder YOUR_STORE_NAME with your actual store name.
+
+```
+SHOPIFY_FLAG_STORE=YOUR_STORE_NAME
 ```
 
 ### Create a new theme
