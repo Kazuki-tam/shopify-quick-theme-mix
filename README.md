@@ -26,7 +26,7 @@ This starter kit supports Shopify GitHub integration.
 ## Requirements
 
 - [Node v16 or higher](https://nodejs.org/en/)
-- [Shopify CLI v3.22.1 or higher](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v3.48.1 or higher](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
