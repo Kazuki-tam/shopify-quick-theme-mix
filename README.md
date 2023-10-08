@@ -15,18 +15,17 @@ This starter kit supports Shopify GitHub integration.
 ## Features
 
 - Abstracting Shopify CLI command
-- Bundle files with webpack
+- Bundle TS files with Rspack
 - Transpile SCSS to CSS with dart-sass
 - Lint TS files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
 - Built-in test runner with Jest and Playwright
-- Creating SVG sprites
 
 ## Requirements
 
-- [Node v16 or higher](https://nodejs.org/en/)
-- [Shopify CLI v3.48.1 or higher](https://shopify.dev/themes/tools/cli)
+- [Node v18 or higher](https://nodejs.org/en/)
+- [Shopify CLI v3.49.6 or higher](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -34,8 +33,8 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 ## Main dependencies
 
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
-- [Yarn](https://yarnpkg.com/)
-- [Webpack](https://webpack.js.org/)
+- [pnpm](https://pnpm.io/)
+- [Rspack](https://www.rspack.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
@@ -49,7 +48,7 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 Clone this repository and install dependencies.
 
 ```bash
-yarn install
+pnpm install
 ```
 
 Create a .env file at the root directory, and then add your SHOPIFY_FLAG_STORE value at least. Replace the placeholder YOUR_STORE_NAME with your actual store name.
@@ -63,7 +62,7 @@ SHOPIFY_FLAG_STORE=YOUR_STORE_NAME
 Use `newTheme` command to create a new theme from scratch. This command creates a copy of Dawn.
 
 ```bash
-yarn newTheme
+pnpm newTheme
 ```
 
 [📖 Theme commands - init](https://shopify.dev/themes/tools/cli/theme-commands#init)
@@ -73,7 +72,7 @@ yarn newTheme
 Use `pull:new` command to customize an existing theme.
 
 ```bash
-yarn pull:new
+pnpm pull:new
 ```
 
 ### Add CSS and JavaScript into your theme files
@@ -81,11 +80,11 @@ yarn pull:new
 Add these tags in `<head></head>` section.
 
 ```liquid
-{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'custom-style.css' | asset_url | stylesheet_tag }}
 ```
 
 ```liquid
-<script src="{{ 'main.js' | asset_url }}" defer></script>
+<script src="{{ 'custom-script.js' | asset_url }}" defer></script>
 ```
 
 ## Available Commands
@@ -97,7 +96,7 @@ Recommend you to check out these commands before you get started.
 Start your project in development mode.
 
 ```bash
-yarn start
+pnpm dev
 ```
 
 ### Build command
@@ -105,13 +104,13 @@ yarn start
 Build your project for production.
 
 ```bash
-yarn build
+pnpm release
 ```
 
 Build your project for development.
 
 ```bash
-yarn build:dev
+pnpm build
 ```
 
 <details>
@@ -122,7 +121,7 @@ yarn build:dev
 Retrieve theme files from Shopify without deleting local files.
 
 ```bash
-yarn pull
+pnpm pull
 ```
 
 ### Push command
@@ -130,19 +129,19 @@ yarn pull
 Upload your local theme files to Shopify without deleting remote files.
 
 ```bash
-yarn push
+pnpm push
 ```
 
 Push to your development theme. If you don't have a development theme, then one is created.
 
 ```bash
-yarn push:dev
+pnpm push:dev
 ```
 
 Upload the theme to the theme library as a new unpublished theme.
 
 ```bash
-yarn push:upload
+pnpm push:upload
 ```
 
 ### Deploy command
@@ -150,20 +149,20 @@ yarn push:upload
 Build your local files and upload them to Shopify as production.
 
 ```bash
-yarn deploy
+pnpm deploy
 ```
 
 Build your local files and upload them to Shopify as development.
 
 ```bash
-yarn deploy:dev
+pnpm deploy:dev
 ```
 
 ### Preview command
 Returns links that let you preview the specified theme.
 
 ```bash
-yarn preview
+pnpm preview
 ```
 
 ### Cheat command
@@ -171,7 +170,7 @@ yarn preview
 Open Shopify Cheat Sheet.
 
 ```bash
-yarn cheat
+pnpm cheat
 ```
 
 [Shopify Cheat Sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
@@ -181,13 +180,13 @@ yarn cheat
 Lint this project code.
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 Fix this project code.
 
 ```bash
-yarn lint:fix
+pnpm lint:fix
 ```
 
 ### Test command
@@ -195,49 +194,49 @@ yarn lint:fix
 Run End-to-end testing and unit testing.
 
 ```bash
-yarn test
+pnpm test
 ```
 
 Run unit testing.
 
 ```bash
-yarn unit
+pnpm unit
 ```
 
 ```bash
-yarn unit:watch
+pnpm unit:watch
 ```
 
 Run End-to-end testing in a headless.
 
 ```bash
-yarn e2e
+pnpm e2e
 ```
 
 Run End-to-end testing with headed browser.
 
 ```bash
-yarn e2e:headed
+pnpm e2e:headed
 ```
 
 Generate End-to-end test code.
 
 ```bash
-yarn e2e:codegen
+pnpm e2e:codegen
 ```
 
 ### Share command
 Uploads your theme as a new, unpublished theme in your theme library.
 
 ```bash
-yarn share
+pnpm share
 ```
 
 ### Package command
 Packages your local theme files into a ZIP file that can be uploaded to Shopify.
 
 ```bash
-yarn package
+pnpm package
 ```
 
 ### PostInstall command
@@ -245,7 +244,7 @@ yarn package
 Install missing TypeScript typings.
 
 ```bash
-yarn postInstall
+pnpm postInstall
 ```
 
 </details>
@@ -256,30 +255,7 @@ Please create an env file and run this command if you want to do an End-to-end t
 Install supported browsers.
 
 ```bash
-yarn e2e:install
-```
-## SVG sprite
-You can manage SVG sprites with [svg-sprite-loader](https://www.npmjs.com/package/svg-sprite-loader).
-
-Add SVG images into `sprite-image` folder.
-
-```
-src/ts/sprite-image/*.svg
-```
-
-Import SVG images at entrypoint.
-
-```ts
-// Import SVG Sprite Images
-import './sprite-image/bag.svg';
-```
-
-The way of Using SVG Sprites in HTML and Liquid.
-
-```html
-<svg>
-  <use xlink:href="#bag"></use>
-</svg>
+pnpm e2e:install
 ```
 
 ## Recommended IDE
