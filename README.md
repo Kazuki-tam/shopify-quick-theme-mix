@@ -186,13 +186,6 @@ pnpm lint:fix
 ```
 
 ### Test command
-
-Run End-to-end testing and unit testing.
-
-```bash
-pnpm test
-```
-
 Run unit testing.
 
 ```bash
