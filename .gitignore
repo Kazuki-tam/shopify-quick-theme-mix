@@ -33,3 +33,7 @@ shopify
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.shopify
+
+## tests
+test-results/
