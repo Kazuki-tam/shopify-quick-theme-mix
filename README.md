@@ -16,20 +16,18 @@ This starter kit supports Shopify GitHub integration.
 
 - Abstracting Shopify CLI command
 - Bundle TS files with Rspack
-- Transpile SCSS to CSS with dart-sass
-- Lint TS files with ESLint
-- Lint SCSS files with Stylelint
-- Format code with prettier
-- Built-in test runner with Jest and Playwright
+- Transpile SCSS to CSS
+- Lint TS files with Biome
+- Built-in test runner with Vitest and Playwright
 
 ## Requirements
 
-- [Node v18 or higher](https://nodejs.org/en/)
-- [Shopify CLI v3.49.6 or higher](https://shopify.dev/themes/tools/cli)
+- [Node v22 or higher](https://nodejs.org/en/)
+- [Shopify CLI v3.78.2 or higher](https://shopify.dev/docs/api/shopify-cli/theme)
 
-Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
+Note: Please refer to [Install Shopify CLI](https://shopify.dev/docs/api/shopify-cli) if you haven't installed Shopify CLI yet.
 
-[📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/themes/tools/cli/upgrade-uninstall)
+[📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/docs/storefronts/themes/tools/cli#upgrade-shopify-cli)
 ## Main dependencies
 
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
@@ -37,10 +35,8 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 - [Rspack](https://www.rspack.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [ESLint](https://eslint.org/)
-- [Stylelint](https://stylelint.io/)
-- [Prettier](https://prettier.io/)
-- [Jest](https://jestjs.io/)
+- [Biome](https://biomejs.dev/)
+- [Vitest](https://vitest.dev/)
 - [Playwright](https://playwright.dev/)
 
 ## How to use
