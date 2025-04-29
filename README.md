@@ -9,7 +9,7 @@ This starter kit supports Shopify GitHub integration.
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2023)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme-mix)
 
 ## Features
