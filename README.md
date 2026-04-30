@@ -1,15 +1,17 @@
 # shopify-quick-theme-mix
 
-shopify-quick-theme-mix is a template extended from [shopify-quick-theme](https://github.com/Kazuki-tam/shopify-quick-theme).
+shopify-quick-theme-mix is a template extended from
+[shopify-quick-theme](https://github.com/Kazuki-tam/shopify-quick-theme).
 
 This starter kit supports Shopify GitHub integration.
 
 [📖 Shopify GitHub integration](https://shopify.dev/themes/tools/github)
+
 ## Status
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme-mix)](https://github.com/Kazuki-tam/shopify-quick-theme-mix/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme-mix)
 
 ## Features
@@ -25,9 +27,12 @@ This starter kit supports Shopify GitHub integration.
 - [Node v22 or higher](https://nodejs.org/en/)
 - [Shopify CLI v3.78.2 or higher](https://shopify.dev/docs/api/shopify-cli/theme)
 
-Note: Please refer to [Install Shopify CLI](https://shopify.dev/docs/api/shopify-cli) if you haven't installed Shopify CLI yet.
+Note: Please refer to
+[Install Shopify CLI](https://shopify.dev/docs/api/shopify-cli) if you haven't
+installed Shopify CLI yet.
 
 [📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/docs/storefronts/themes/tools/cli#upgrade-shopify-cli)
+
 ## Main dependencies
 
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
@@ -47,7 +52,9 @@ Clone this repository and install dependencies.
 pnpm install
 ```
 
-Create a .env file at the root directory, and then add your SHOPIFY_FLAG_STORE value at least. Replace the placeholder YOUR_STORE_NAME with your actual store name.
+Create a .env file at the root directory, and then add your SHOPIFY_FLAG_STORE
+value at least. Replace the placeholder YOUR_STORE_NAME with your actual store
+name.
 
 ```
 SHOPIFY_FLAG_STORE=YOUR_STORE_NAME
@@ -55,7 +62,8 @@ SHOPIFY_FLAG_STORE=YOUR_STORE_NAME
 
 ### Create a new theme
 
-Use `newTheme` command to create a new theme from scratch. This command creates a copy of Dawn.
+Use `newTheme` command to create a new theme from scratch. This command creates
+a copy of Dawn.
 
 ```bash
 pnpm newTheme
@@ -128,7 +136,8 @@ Upload your local theme files to Shopify without deleting remote files.
 pnpm push
 ```
 
-Push to your development theme. If you don't have a development theme, then one is created.
+Push to your development theme. If you don't have a development theme, then one
+is created.
 
 ```bash
 pnpm push:dev
@@ -155,6 +164,7 @@ pnpm deploy:dev
 ```
 
 ### Preview command
+
 Returns links that let you preview the specified theme.
 
 ```bash
@@ -186,6 +196,7 @@ pnpm lint:fix
 ```
 
 ### Test command
+
 Run unit testing.
 
 ```bash
@@ -215,6 +226,7 @@ pnpm e2e:codegen
 ```
 
 ### Share command
+
 Uploads your theme as a new, unpublished theme in your theme library.
 
 ```bash
@@ -222,6 +234,7 @@ pnpm share
 ```
 
 ### Package command
+
 Packages your local theme files into a ZIP file that can be uploaded to Shopify.
 
 ```bash
@@ -239,7 +252,9 @@ pnpm postInstall
 </details>
 
 ## End-to-end test
-Please create an env file and run this command if you want to do an End-to-end test.
+
+Please create an env file and run this command if you want to do an End-to-end
+test.
 
 Install supported browsers.
 
@@ -251,14 +266,14 @@ pnpm e2e:install
 
 [Visual Studio Code](https://code.visualstudio.com/)
 
-
 ## Contributes
 
 Pull requests are always welcome.
 
 ## Support
-I'll be trying to keep this starter kit as up-to-date as possible.
-I hope you buy me a coffee if this starter kit is helpful for you.
+
+I'll be trying to keep this starter kit as up-to-date as possible. I hope you
+buy me a coffee if this starter kit is helpful for you.
 
 <!-- BADGES/ -->
 <p>
