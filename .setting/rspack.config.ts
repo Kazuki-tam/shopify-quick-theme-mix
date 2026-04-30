@@ -1,6 +1,9 @@
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "@rspack/cli";
-const assetsPath = path.resolve(__dirname, '../assets/');
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const assetsPath = path.resolve(currentDir, "../assets/");
 
 // Set production or development via NODE_ENV
 const MODE = process.env.NODE_ENV || 'development';
