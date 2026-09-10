@@ -87,7 +87,7 @@
     "rimraf": "^6.1.3",
     "sass": "^1.99.0",
     "typescript": "5.9.3",
-    "vitest": "^4.1.5"
+    "vitest": "^4.1.11"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
