@@ -1,6 +1,6 @@
 {
   "name": "shopify-quick-theme-mix",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Starter kit which supports GitHub integration for Shopify theme developers.",
   "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "license": "MIT",
@@ -72,22 +72,22 @@
     "theme:check": "shopify theme check -a"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.13",
-    "@playwright/test": "^1.59.1",
-    "@rspack/cli": "^2.0.1",
-    "@rspack/core": "^2.0.1",
-    "@types/node": "^22.19.17",
-    "autoprefixer": "^10.5.0",
+    "@biomejs/biome": "2.6.4",
+    "@playwright/test": "^1.64.1",
+    "@rspack/cli": "^2.3.0",
+    "@rspack/core": "^2.3.0",
+    "@types/node": "^22.20.5",
+    "autoprefixer": "^10.6.2",
     "cpx2": "^8.0.2",
     "dotenv": "^17.4.2",
     "npm-run-all2": "^8.0.4",
     "open-cli": "^9.0.0",
-    "postcss": "^8.5.12",
+    "postcss": "^8.5.32",
     "postcss-cli": "^11.0.1",
     "rimraf": "^6.1.3",
-    "sass": "^1.99.0",
+    "sass": "^1.107.0",
     "typescript": "5.9.3",
-    "vitest": "^4.1.5"
+    "vitest": "^4.1.12"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -95,10 +95,16 @@
       "esbuild"
     ],
     "overrides": {
+      "brace-expansion@>=3.0.0 <5.0.12": "5.0.12",
       "cpx2>minimatch": "10.2.5",
+      "esbuild@>=0.27.3 <0.28.1": "0.28.2",
       "glob@11>minimatch": "10.2.5",
+      "immutable@>=5.0.0 <5.1.8": "5.1.9",
       "picomatch@<2.3.2": "2.3.2",
       "picomatch@>=4.0.0 <4.0.4": "4.0.4",
+      "shell-quote@<=1.8.4": "1.12.0",
+      "source-map-js@<1.2.2": "1.2.2",
+      "vite@>=8.0.0 <=8.1.5": "8.3.5",
       "yaml": "2.8.3"
     }
   }
